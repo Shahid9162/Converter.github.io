@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Unit Converter</h1>
+    <header>
+      <nav>
+        <ul class="sidebar">
+          <li id="cross">
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                /></svg
+            ></a>
+          </li>
+          <li>
+            <a href="index.html">Kilometers - Miles</a>
+          </li>
+          <li>
+            <a href="centimerter.html">Centimeters - Meters</a>
+          </li>
+          <li>
+            <a href="dollar.html">Dollars - Rupees</a>
+          </li>
+          <li>
+            <a href="hours.html">Hours - Seconds</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="index.html" class="hidelinks">Kilometers - Miles</a>
+          </li>
+          <li>
+            <a href="centimerter.html" class="hidelinks"
+              >Centimeters - Meters</a
+            >
+          </li>
+          <li>
+            <a href="dollar.html" class="hidelinks">Dollars - Rupees</a>
+          </li>
+          <li>
+            <a href="hours.html" class="hidelinks">Hours - Seconds</a>
+          </li>
+          <li id="menu">
+            <a href="#" id="ham"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front one_front">
+          <button type="button" class="switchButton frntbtn">Switch</button>
+          <form action="">
+            <input type="text" id="kmsip" placeholder="Enter Kilometers" />
+            <input type="text" id="mlop" placeholder="Result" readonly />
+            <button type="button" class="cnvrt mlcnvrt">Convert</button>
+          </form>
+        </div>
+
+        <div class="card__face card__face--back one_back">
+          <button type="button" class="switchButton bkbtn">Switch</button>
+          <form action="" class="back__form">
+            <input type="text" id="mlip" placeholder="Enter Miles" />
+            <input type="text" id="kmsop" placeholder="Result" readonly />
+            <button type="button" class="cnvrt kmcnvrt">Convert</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
